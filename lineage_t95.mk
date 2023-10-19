@@ -13,6 +13,9 @@ $(call inherit-product, device/mbox/t95/device.mk)
 # Inherit LineageOS TV product
 $(call inherit-product, vendor/lineage/config/common_full_tv.mk)
 
+# Inherit GApps
+$(call inherit-product-if-exists, vendor/gapps_tv/arm/arm-vendor.mk)
+
 PRODUCT_NAME := lineage_t95
 PRODUCT_DEVICE := t95
 PRODUCT_MANUFACTURER := mbox
