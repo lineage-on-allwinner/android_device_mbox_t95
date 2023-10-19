@@ -7,6 +7,9 @@
 # Inherit from cupid-common
 $(call inherit-product, device/allwinner/cupid-common/cupid-common.mk)
 
+# TV
+USE_OEM_TV_APP := false
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
