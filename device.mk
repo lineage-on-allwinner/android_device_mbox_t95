@@ -9,6 +9,7 @@ $(call inherit-product, device/allwinner/cupid-common/cupid-common.mk)
 
 # TV
 USE_OEM_TV_APP := false
+PRODUCT_SUPPORTS_TUNER := false
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
