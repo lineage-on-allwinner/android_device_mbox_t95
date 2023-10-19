@@ -7,6 +7,9 @@
 # Inherit from cupid-common
 $(call inherit-product, device/allwinner/cupid-common/cupid-common.mk)
 
+# Camera
+PRODUCT_SUPPORTS_CAMERA := false
+
 # TV
 USE_OEM_TV_APP := false
 PRODUCT_SUPPORTS_TUNER := false
